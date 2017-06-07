@@ -1,2 +1,2 @@
 # dwh_course
-Source Code for DWH lecture
+The Git repository contains the source Code for my DWH lecture.
