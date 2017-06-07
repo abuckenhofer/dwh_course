@@ -1,0 +1,1 @@
+The Hands-on workshop conatins and sample DWH project from data load to data delivery.
