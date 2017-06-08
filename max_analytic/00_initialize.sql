@@ -11,7 +11,7 @@ end;
 /
 
 create table s_customer (
-     customer_key integer
+     customer_key integer        NOT NULL
    , cust_name    varchar2(100)  NOT NULL
    , status       varchar2(10)
    , valid_from   date           NOT NULL
