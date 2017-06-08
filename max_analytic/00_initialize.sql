@@ -1,5 +1,6 @@
 -- author      =     Andreas Buckenhofer 
 -- description =     Creates table loads data for tests with max and analytic functions
+--                   The table contains full history by using a valid from date but no valid to date
 
 begin
     for c1 in (select table_name from user_tables where table_name = 'S_CUSTOMER') 
