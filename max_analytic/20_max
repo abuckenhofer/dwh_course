@@ -59,3 +59,4 @@ FROM   S_CUSTOMER s
 JOIN   max_cust b ON s.customer_key = b.customer_key
                   AND s.valid_from = b.max_valid_from;
 ---------------------------------
+
