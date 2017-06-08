@@ -10,3 +10,4 @@ JOIN (SELECT i.customer_key,
       GROUP BY i.customer_key) b
 ON s.customer_key = b.customer_key 
 AND s.valid_from = b.max_valid_from;
+
