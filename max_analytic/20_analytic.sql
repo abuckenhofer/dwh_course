@@ -6,8 +6,7 @@
 -- 01
 ---------------------------------   
 WITH lead_cust as (
-   SELECT lead (s.valid_from, 1) OVER (PARTITION BY
-                                           s.customer_key 
+   SELECT lead (s.valid_from, 1) OVER (PARTITION BY s.customer_key 
                       ORDER BY s.valid_from ASC) as end_ts
          , s.*
    FROM s_customer s)               
