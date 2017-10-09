@@ -1,7 +1,0 @@
--- create table for staging layer
-CREATE TABLE STG_CATEGORY_CARSHARING (
-    HAL_ID	 		NUMBER, 
-    CATEGORY 			VARCHAR2(255),
-    COMPANY	 	        VARCHAR2(30),
-    COMPANY_GROUP	 	VARCHAR2(30)
-);
