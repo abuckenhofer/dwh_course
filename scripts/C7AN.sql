@@ -2,10 +2,10 @@ alter table L_BOOKING
    drop constraint FK_L_BOOKIN_REFERENCE_H_BOOKIN;
 
 alter table L_BOOKING
-   drop constraint FK_L_BOOKIN_REFERENCE_H_RENTAL;
+   drop constraint FK_L_BOOKIN_START_H_RENTAL;
 
 alter table L_BOOKING
-   drop constraint FK_L_BOOKIN_REFERENCE_H_RENTAL;
+   drop constraint FK_L_BOOKIN_END_H_RENTAL;
 
 alter table L_BOOKING
    drop constraint FK_L_BOOKIN_REFERENCE_H_VEHICL;
