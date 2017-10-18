@@ -169,7 +169,7 @@ create table S_RENTAL_ZONE_FLK (
    ACTIVE_X             VARCHAR2(30),
    COMPANY              VARCHAR2(30),
    COMPANY_GROUP        VARCHAR2(30),
-   constraint PK_S_RENTAL_ZONE_FLK primary key (H_RENTAL_ZONE_KEY, LOADDATE, H_RENTAL_ZONE_KEY, LOADDATE)
+   constraint PK_S_RENTAL_ZONE_FLK primary key (H_RENTAL_ZONE_KEY, LOADDATE)
 );
 
 /*==============================================================*/
