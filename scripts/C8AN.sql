@@ -200,11 +200,11 @@ alter table L_BOOKING
       references H_BOOKING (H_BOOKING_KEY);
 
 alter table L_BOOKING
-   add constraint FK_L_BOOKIN_REFERENCE_H_RENTAL foreign key (H_RENTAL_ZONE_KEY_START)
+   add constraint FK_L_BOOKIN_START_H_RENTAL foreign key (H_RENTAL_ZONE_KEY_START)
       references H_RENTAL_ZONE (H_RENTAL_ZONE_KEY);
 
 alter table L_BOOKING
-   add constraint FK_L_BOOKIN_REFERENCE_H_RENTAL foreign key (H_RENTAL_ZONE_KEY_END)
+   add constraint FK_L_BOOKIN_END_H_RENTAL foreign key (H_RENTAL_ZONE_KEY_END)
       references H_RENTAL_ZONE (H_RENTAL_ZONE_KEY);
 
 alter table L_BOOKING
