@@ -3,6 +3,8 @@
 -- add missing  data
 INSERT INTO H_RENTAL_ZONE (H_RENTAL_ZONE_KEY, LOADDATE, RECORD_SOURCE, RENTAL_ZONE_ID, RENTAL_ZONE_SRC)
 VALUES (standard_hash(401941 || '#' || 'Station', 'MD5'), current_date, 'manual', 401941, 'Station');
+INSERT INTO S_RENTAL_ZONE_FLK (H_RENTAL_ZONE_KEY, LOADDATE, RECORD_SOURCE, NAME)
+VALUES (standard_hash(401941 || '#' || 'Station', 'MD5'), current_date, 'manual', 'Station');
 
 -- fill link and limit data to Stuttgart
 INSERT INTO L_BOOKING (L_BOOKING_KEY, H_RENTAL_ZONE_KEY_START, H_RENTAL_ZONE_KEY_END, H_VEHICLE_KEY, H_CUSTOMER_KEY, H_BOOKING_KEY, LOAD_DATE, RECORD_SOURCE)
