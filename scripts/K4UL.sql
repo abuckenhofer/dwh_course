@@ -1,4 +1,4 @@
--- HUB tables
+-- Insert into HUB tables
 INSERT INTO H_BOOKING (H_BOOKING_KEY, LOADDATE, RECORD_SOURCE, BOOKING_ID)
 SELECT DISTINCT standard_hash(f.BOOKING_HAL_ID, 'MD5')
      , current_date
