@@ -1,6 +1,8 @@
 -- load Mart layer 
 -- initial load
 
+truncate table F_BOOKING;
+
 delete from D_DATE;
 delete from D_EXTRA_BOOKING_FEE;
 delete from D_TRAVERSE_USE;
