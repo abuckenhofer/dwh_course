@@ -14,7 +14,7 @@ with date_t as (
    select to_date('01.01.2013') + rownum - 1 as dt
    from dual  CONNECT BY ROWNUM < 731
 )
-select dt, extract(day from dt), extract(month from dt), extract(year from dt) from date_t
+select dt, extract(day from dt), extract(month from dt), extract(year from dt) from date_t;
 
 
 insert into D_EXTRA_BOOKING_FEE (D_EXTRA_BOOKING_FEE_ID, COMPUTE_EXTRA_BOOKING_FEE)
